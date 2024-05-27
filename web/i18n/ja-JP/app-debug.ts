@@ -281,6 +281,7 @@ const translation = {
     'varName': '変数名',
     'labelName': 'ラベル名',
     'inputPlaceholder': '入力してください',
+    'content': 'コンテンツ',
     'required': '必須',
     'errorMsg': {
       varNameRequired: '変数名は必須です',

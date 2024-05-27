@@ -1,10 +1,12 @@
 const translation = {
   title: 'ツール',
   createCustomTool: 'カスタムツールを作成する',
+  customToolTip: 'Difyカスタムツールの詳細を確認する',
   type: {
     all: 'すべて',
     builtIn: '組み込み',
     custom: 'カスタム',
+    workflow: 'ワークフロー',
   },
   contribute: {
     line1: '私は',
@@ -21,6 +23,15 @@ const translation = {
   },
   includeToolNum: '{{num}}個のツールが含まれています',
   addTool: 'ツールを追加する',
+  addToolModal: {
+    type: 'タイプ',
+    category: 'カテゴリー',
+    add: '追加',
+    added: '追加済み',
+    manageInTools: 'ツールで管理',
+    emptyTitle: '利用可能なワークフローツールがありません',
+    emptyTip: '"ワークフロー -> ツールとして公開" に移動します',
+  },
   createTool: {
     title: 'カスタムツールを作成する',
     editAction: '設定',
@@ -29,6 +40,11 @@ const translation = {
     toolNamePlaceHolder: 'ツール名を入力してください',
     schema: 'スキーマ',
     schemaPlaceHolder: 'ここにOpenAPIスキーマを入力してください',
+    nameForToolCall: 'ツール呼び出し名',
+    nameForToolCallPlaceHolder: 'マシンが認識するために使用されます。例: getCurrentWeather, list_pets',
+    nameForToolCallTip: '数字、文字、アンダースコアのみをサポートしています。',
+    description: '説明',
+    descriptionPlaceholder: 'ツールの目的を簡潔に説明してください。例: 特定の場所の気温を取得する。',
     viewSchemaSpec: 'OpenAPI-Swagger仕様を表示する',
     importFromUrl: 'URLからインポートする',
     importFromUrlPlaceHolder: 'https://...',
@@ -71,8 +87,24 @@ const translation = {
     },
     privacyPolicy: 'プライバシーポリシー',
     privacyPolicyPlaceholder: 'プライバシーポリシーを入力してください',
+    toolInput: {
+      title: 'ツール入力',
+      name: '名前',
+      required: '必須',
+      method: 'メソッド',
+      methodSetting: '設定',
+      methodSettingTip: 'ユーザーがツールの設定を入力します',
+      methodParameter: 'パラメーター',
+      methodParameterTip: '推論中にLLMが入力します',
+      label: 'タグ',
+      labelPlaceholder: 'タグを選択（オプション）',
+      description: '説明',
+      descriptionPlaceholder: 'パラメーターの意味の説明',
+    },
     customDisclaimer: 'カスタム免責事項',
     customDisclaimerPlaceholder: 'カスタム免責事項を入力してください',
+    confirmTitle: '保存を確認しますか？',
+    confirmTip: 'このツールを使用しているアプリに影響します',
   },
   test: {
     title: 'テスト',
@@ -112,6 +144,8 @@ const translation = {
   toolRemoved: 'ツールが削除されました',
   notAuthorized: 'ツールが認可されていません',
   howToGet: '取得方法',
+  openInStudio: 'スタジオで開く',
+  toolNameUsageTip: 'エージェントの推論とプロンプトのためのツール呼び出し名',
 }
 
 export default translation
